@@ -1,6 +1,8 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.utilities.BrowserUtils;
 import com.vytrack.utilities.Pages;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 
@@ -9,6 +11,57 @@ import java.util.Map;
 
 public class VehiclesStepDefinitions {
     Pages pages = new Pages();
+    BrowserUtils util= new BrowserUtils();
+
+
+    @Then("user click on any car grid")
+    public void user_click_on_any_car_grid() {
+        util.waitFor(5);
+        pages.vehiclesPage().anyCar.click();
+    }
+
+
+    @Then("user verifies that {string} about the car is displayed")
+    public void user_verifies_that_about_the_car_is_displayed(String string) {
+        Assert.assertEquals(string, pages.vehiclesPage().carGeneralInfo.getText());
+    }
+
+    @Then("user click on license plate")
+    public void user_click_on_license_plate() {
+        util.waitFor(5);
+        pages.vehiclesPage().licensePlateBtnLocator.click();
+        util.waitFor(2);
+    }
+
+    @And("user verifies that reset button is working")
+    public void user_verifies_that_reset_button_is_working() {
+        String license1=pages.vehiclesPage().anyCar.getText();
+        util.waitFor(2);
+        pages.vehiclesPage().resetBtnLocator.click();
+        util.waitFor(5);
+        String license2=pages.vehiclesPage().anyCar.getText();
+        Assert.assertNotEquals(license1,license2);
+
+    }
+
+
+    @Then("user click on add event button")
+    public void user_click_on_add_event_button() {
+
+        util.waitFor(2);
+        pages.vehiclesPage().addNewEvent();
+    }
+
+
+//    @And("user verifies that event is displayed under activity tab")
+//    public void userVerifiesThatEventIsDisplayedUnderActivityTab() {
+//
+//    }
+//
+//    @And("user verifies that event is displayed under General page")
+//    public void userVerifiesThatEventIsDisplayedUnderGeneralPage() {
+//
+//    }
 
     @Then("user verifies that default page number is {int}")
     public void user_verifies_that_default_page_number_is(Integer expected) {
