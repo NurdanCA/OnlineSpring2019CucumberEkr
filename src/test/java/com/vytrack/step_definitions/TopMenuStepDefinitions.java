@@ -2,6 +2,7 @@ package com.vytrack.step_definitions;
 
 import com.vytrack.utilities.Pages;
 import cucumber.api.java.en.Then;
+import org.junit.Assert;
 
 public class TopMenuStepDefinitions {
 
@@ -13,5 +14,14 @@ public class TopMenuStepDefinitions {
         pages.dashboardPage().navigateToModule(tab, module);
     }
 
+    @Then("user name should be {string}")
+    public void user_name_should_be(String expected) {
+        Assert.assertEquals(expected, pages.dashboardPage().getUserMenuName());
+    }
+
+    @Then("the page title should be {string}")
+    public void the_page_title_should_be(String expected) {
+        Assert.assertEquals(expected, pages.dashboardPage().getPageTitle());
+    }
 
 }

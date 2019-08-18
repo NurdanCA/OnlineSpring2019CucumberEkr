@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.vytrack.runners.CukesRunner" time="25.963" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/test-classes:/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/classes:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/Ekrem/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/Ekrem/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/Ekrem/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/Ekrem/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/Ekrem/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/Ekrem/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/Ekrem/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/Ekrem/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/Ekrem/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/Ekrem/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/Ekrem/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/Ekrem/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/Ekrem/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/Ekrem/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/Ekrem/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/Ekrem/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Ekrem/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/Ekrem/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/Ekrem/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/Ekrem/.m2/repository/com/github/javafaker/javafaker/0.18/javafaker-0.18.jar:/Users/Ekrem/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/Ekrem/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/Ekrem/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/Ekrem/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.0/log4j-api-2.12.0.jar:/Users/Ekrem/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.0/log4j-core-2.12.0.jar:/Users/Ekrem/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-java/4.2.2/cucumber-java-4.2.2.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-core/4.2.2/cucumber-core-4.2.2.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/Ekrem/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/Ekrem/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-expressions/6.2.0/cucumber-expressions-6.2.0.jar:/Users/Ekrem/.m2/repository/io/cucumber/datatable/1.1.12/datatable-1.1.12.jar:/Users/Ekrem/.m2/repository/io/cucumber/datatable-dependencies/1.1.12/datatable-dependencies-1.1.12.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-junit/4.2.2/cucumber-junit-4.2.2.jar:/Users/Ekrem/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Ekrem/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/surefire/surefirebooter5059383164397873011.jar /Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/surefire 2019-08-18T17-22-14_590-jvmRun1 surefire13286762499257349101tmp surefire_011977323271601611574tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/test-classes:/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/classes:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/Ekrem/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/Ekrem/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/Ekrem/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/Ekrem/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/Ekrem/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/Ekrem/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/Ekrem/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/Ekrem/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/Ekrem/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/Ekrem/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/Ekrem/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.1/webdrivermanager-3.6.1.jar:/Users/Ekrem/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/Ekrem/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/Ekrem/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/Ekrem/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/Ekrem/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/Ekrem/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Ekrem/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/Ekrem/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/Ekrem/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/Ekrem/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/Ekrem/.m2/repository/com/github/javafaker/javafaker/0.18/javafaker-0.18.jar:/Users/Ekrem/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/Ekrem/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/Ekrem/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/Ekrem/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.0/log4j-api-2.12.0.jar:/Users/Ekrem/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.0/log4j-core-2.12.0.jar:/Users/Ekrem/.m2/repository/org/slf4j/slf4j-simple/1.7.21/slf4j-simple-1.7.21.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-java/4.2.2/cucumber-java-4.2.2.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-core/4.2.2/cucumber-core-4.2.2.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/Ekrem/.m2/repository/io/cucumber/gherkin/5.1.0/gherkin-5.1.0.jar:/Users/Ekrem/.m2/repository/io/cucumber/tag-expressions/1.1.1/tag-expressions-1.1.1.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-expressions/6.2.0/cucumber-expressions-6.2.0.jar:/Users/Ekrem/.m2/repository/io/cucumber/datatable/1.1.12/datatable-1.1.12.jar:/Users/Ekrem/.m2/repository/io/cucumber/datatable-dependencies/1.1.12/datatable-dependencies-1.1.12.jar:/Users/Ekrem/.m2/repository/io/cucumber/cucumber-junit/4.2.2/cucumber-junit-4.2.2.jar:/Users/Ekrem/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/Ekrem/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/Ekrem"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber/target/surefire/surefirebooter5059383164397873011.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.2+9-LTS"/>
+    <property name="user.name" value="Ekrem"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/Ekrem/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/jj/gm98zqgd3rb2pwc60wljj6g80000gn/T/"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="user.dir" value="/Users/Ekrem/IdeaProjects/OnlineSpring2019Cucumber"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/Ekrem/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.2+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Login as a store manager" classname="Login" time="20.935"/>
+  <testcase name="Verify warning message for invalid credentials" classname="Login" time="4.128">
+    <failure message="expected:&lt;Invalid user name[]&gt; but was:&lt;Invalid user name[ or password.]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<Invalid user name[]> but was:<Invalid user name[ or password.]>
+]]></failure>
+    <system-out><![CDATA[[@negative, @VYT-4121]
+Verify warning message for invalid credentials
+BEFORE
+AFTER
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 76.0.3809.68 (since Google Chrome 76 is installed in your machine)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/Ekrem/.m2/repository/webdriver/chromedriver/mac64/76.0.3809.68/chromedriver
+Starting ChromeDriver 76.0.3809.68 (420c9498db8ce8fcd190a954d51297672c1515d5-refs/branch-heads/3809@{#864}) on port 11954
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Aug 18, 2019 5:22:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

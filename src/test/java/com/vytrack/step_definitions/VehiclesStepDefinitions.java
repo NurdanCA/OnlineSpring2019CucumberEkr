@@ -84,7 +84,8 @@ public class VehiclesStepDefinitions {
 
     @Then("user enters car information:")
     public void user_enters_car_information(Map<String, String> values) {
-        pages.vehiclesPage().enterLicensePlate(values.get("License Plate"));
+        //before reading a data table we can verify if such a key-value pair exists
+        if(values.containsKey("License Plate"))pages.vehiclesPage().enterLicensePlate(values.get("License Plate"));
         pages.vehiclesPage().enterDriver(values.get("Driver"));
         pages.vehiclesPage().enterLocation(values.get("Location"));
         pages.vehiclesPage().enterModelYear(values.get("Model Year"));
@@ -100,6 +101,7 @@ public class VehiclesStepDefinitions {
 //        as many maps ypu will have in the list
 //        provide column name as key name and be happy:)
         for(Map<String, String> value: values){
+            System.out.println(value);
             pages.vehiclesPage().enterLicensePlate(value.get("License Plate"));
             pages.vehiclesPage().enterDriver(value.get("Driver"));
             pages.vehiclesPage().enterLocation(value.get("Location"));
