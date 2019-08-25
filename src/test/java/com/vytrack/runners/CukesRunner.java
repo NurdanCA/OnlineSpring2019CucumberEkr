@@ -2,6 +2,7 @@ package com.vytrack.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -24,6 +25,6 @@ import org.junit.runner.RunWith;
         dryRun = false
 
 )
-public class CukesRunner{
+public class CukesRunner extends AbstractTestNGCucumberTests {
 
 }
